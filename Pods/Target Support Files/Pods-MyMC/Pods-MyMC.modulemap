@@ -1,0 +1,6 @@
+framework module Pods_MyMC {
+  umbrella header "Pods-MyMC-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ScalaSansOT Bold.otf">
+            <string>ScalaSansOT-Bold</string>
+        </mutableArray>
+        <mutableArray key="ScalaSansOT Light.otf">
+            <string>ScalaSansOT-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="91" height="147"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="il3-Y8-jdB">
+                    <rect key="frame" x="8" y="8" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="58K-yp-FIF"/>
+                        <constraint firstAttribute="height" constant="75" id="JBe-Ub-pOE"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRj-RL-z4X">
+                    <rect key="frame" x="8" y="91" width="75" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5o-nE-UyQ">
+                            <rect key="frame" x="18" y="0.0" width="38" height="20"/>
+                            <fontDescription key="fontDescription" name="ScalaSansOT-Bold" family="Scala Sans OT" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="t5o-nE-UyQ" secondAttribute="trailing" constant="19" id="ZEj-qs-Zkc"/>
+                        <constraint firstItem="t5o-nE-UyQ" firstAttribute="centerY" secondItem="qRj-RL-z4X" secondAttribute="centerY" id="eiU-6W-FiL"/>
+                        <constraint firstItem="t5o-nE-UyQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qRj-RL-z4X" secondAttribute="leading" constant="18" id="ntH-A5-nFi"/>
+                        <constraint firstItem="t5o-nE-UyQ" firstAttribute="leading" secondItem="qRj-RL-z4X" secondAttribute="leading" constant="8" id="rBe-Km-mKM"/>
+                        <constraint firstItem="t5o-nE-UyQ" firstAttribute="centerX" secondItem="qRj-RL-z4X" secondAttribute="centerX" id="zhM-Lt-Fbl"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="rBe-Km-mKM"/>
+                            <exclude reference="zhM-Lt-Fbl"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXe-iY-tEq">
+                    <rect key="frame" x="8" y="119" width="75" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNk-v3-LgS">
+                            <rect key="frame" x="19" y="0.0" width="37" height="20"/>
+                            <fontDescription key="fontDescription" name="ScalaSansOT-Light" family="Scala Sans OT" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iNk-v3-LgS" firstAttribute="centerY" secondItem="cXe-iY-tEq" secondAttribute="centerY" id="BhH-7t-TxY"/>
+                        <constraint firstItem="iNk-v3-LgS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cXe-iY-tEq" secondAttribute="leading" constant="19" id="Snd-yh-SE9"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iNk-v3-LgS" secondAttribute="trailing" constant="19" id="cTR-aW-kDg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qRj-RL-z4X" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="4DG-C6-cAK"/>
+                <constraint firstItem="cXe-iY-tEq" firstAttribute="top" secondItem="qRj-RL-z4X" secondAttribute="bottom" constant="8" id="8mt-5B-8H5"/>
+                <constraint firstItem="il3-Y8-jdB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Lhy-jD-2fT"/>
+                <constraint firstItem="qRj-RL-z4X" firstAttribute="top" secondItem="il3-Y8-jdB" secondAttribute="bottom" constant="8" id="Mav-Hz-v3j"/>
+                <constraint firstItem="il3-Y8-jdB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZTr-Tv-Irl"/>
+                <constraint firstItem="cXe-iY-tEq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="b2M-FP-J6G"/>
+                <constraint firstItem="cXe-iY-tEq" firstAttribute="top" secondItem="qRj-RL-z4X" secondAttribute="bottom" constant="8" id="cPt-TO-unP"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qRj-RL-z4X" secondAttribute="trailing" constant="8" id="fPb-xG-3Ep"/>
+                <constraint firstAttribute="bottom" secondItem="cXe-iY-tEq" secondAttribute="bottom" constant="8" id="jnD-7u-EbT"/>
+                <constraint firstItem="il3-Y8-jdB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rO4-a6-FlX"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cXe-iY-tEq" secondAttribute="trailing" constant="8" id="yFE-FS-mo5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="rO4-a6-FlX"/>
+                    <exclude reference="8mt-5B-8H5"/>
+                    <exclude reference="jnD-7u-EbT"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="538.5" y="192.5"/>
+        </view>
+    </objects>
+</document>

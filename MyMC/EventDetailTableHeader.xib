@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ScalaSansOT Light.otf">
+            <string>ScalaSansOT-Light</string>
+        </mutableArray>
+        <mutableArray key="TradeGothicLTStd BdCn20.otf">
+            <string>TradeGothicLTStd-BdCn20</string>
+            <string>TradeGothicLTStd-BdCn20</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EventDetailTableHeader" customModule="MyMC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5fD-yR-UvT">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="165" id="Anm-04-m5J"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Anm-04-m5J"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XgZ-E6-H6G">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkw-OL-YB7">
+                            <rect key="frame" x="555" y="8" width="37" height="20"/>
+                            <fontDescription key="fontDescription" name="ScalaSansOT-Light" family="Scala Sans OT" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBX-Fh-Hop">
+                            <rect key="frame" x="266" y="78" width="69" height="35"/>
+                            <fontDescription key="fontDescription" name="TradeGothicLTStd-BdCn20" family="Trade Gothic LT Std" pointSize="35"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg4-y5-j39">
+                            <rect key="frame" x="242" y="115" width="117" height="60"/>
+                            <fontDescription key="fontDescription" name="TradeGothicLTStd-BdCn20" family="Trade Gothic LT Std" pointSize="60"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="vd0-24-ana">
+                            <rect key="frame" x="290" y="199" width="20" height="20"/>
+                            <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Jg4-y5-j39" firstAttribute="top" secondItem="QBX-Fh-Hop" secondAttribute="bottom" constant="2" id="0Gg-TU-78t"/>
+                        <constraint firstAttribute="trailing" secondItem="Rkw-OL-YB7" secondAttribute="trailing" constant="8" id="88b-iT-3QV"/>
+                        <constraint firstItem="Jg4-y5-j39" firstAttribute="centerY" secondItem="XgZ-E6-H6G" secondAttribute="centerY" constant="20" id="cAP-sC-3eH"/>
+                        <constraint firstItem="vd0-24-ana" firstAttribute="centerX" secondItem="XgZ-E6-H6G" secondAttribute="centerX" id="ccB-NP-kwB"/>
+                        <constraint firstItem="Jg4-y5-j39" firstAttribute="centerX" secondItem="XgZ-E6-H6G" secondAttribute="centerX" id="f8A-5Y-BRZ"/>
+                        <constraint firstItem="Rkw-OL-YB7" firstAttribute="top" secondItem="XgZ-E6-H6G" secondAttribute="top" constant="8" id="fNe-1d-VxU"/>
+                        <constraint firstItem="vd0-24-ana" firstAttribute="top" secondItem="Jg4-y5-j39" secondAttribute="bottom" constant="24" id="m7E-hy-fQN"/>
+                        <constraint firstItem="QBX-Fh-Hop" firstAttribute="centerX" secondItem="XgZ-E6-H6G" secondAttribute="centerX" id="sD5-b4-M5a"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5fD-yR-UvT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2eB-Uh-rS0"/>
+                <constraint firstAttribute="trailing" secondItem="XgZ-E6-H6G" secondAttribute="trailing" id="H3v-K8-oVV"/>
+                <constraint firstItem="XgZ-E6-H6G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rp1-0a-GHq"/>
+                <constraint firstItem="5fD-yR-UvT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="V3q-55-qrb"/>
+                <constraint firstAttribute="bottom" secondItem="5fD-yR-UvT" secondAttribute="bottom" id="WPT-zH-Zff"/>
+                <constraint firstItem="XgZ-E6-H6G" firstAttribute="height" secondItem="5fD-yR-UvT" secondAttribute="height" id="apH-eC-ClC"/>
+                <constraint firstItem="XgZ-E6-H6G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s3O-A5-N7s"/>
+                <constraint firstAttribute="trailing" secondItem="5fD-yR-UvT" secondAttribute="trailing" id="x8q-99-76I"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="eventDay" destination="QBX-Fh-Hop" id="Zh9-Ik-o9a"/>
+                <outlet property="eventDayNum" destination="Jg4-y5-j39" id="nwd-ZI-YJm"/>
+                <outlet property="eventImage" destination="5fD-yR-UvT" id="kzf-zP-umR"/>
+                <outlet property="eventMonth" destination="Rkw-OL-YB7" id="efR-hs-vYD"/>
+                <outlet property="filterView" destination="XgZ-E6-H6G" id="S7i-fB-k5W"/>
+                <outlet property="loadIcon" destination="vd0-24-ana" id="zjj-Lw-qaM"/>
+            </connections>
+            <point key="canvasLocation" x="408" y="165"/>
+        </view>
+    </objects>
+</document>
